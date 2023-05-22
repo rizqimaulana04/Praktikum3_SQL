@@ -81,7 +81,7 @@ Implementasikan penggunaan **CONSTRAINT FOREIGN KEY** pada semua tabel yang bere
     SET kd_ds = 'DS011' WHERE nim = 112233445;
     ```
 
-    **Contoh:**
+    **Contoh:** <br>
     ![img](gambar/1.png)<br>
     ![img](gambar/2.png)<br>
 
@@ -91,7 +91,7 @@ Implementasikan penggunaan **CONSTRAINT FOREIGN KEY** pada semua tabel yang bere
     DELETE FROM dosen WHERE kd_ds = 'DS001';
     ```
 
-    **Contoh:**
+    **Contoh:** <br>
     ![img](gambar/3.png)<br>
 
 3. Ubah mode menjadi ON UPDATE CASCADE ON DELETE RESTRICT
@@ -108,7 +108,7 @@ Implementasikan penggunaan **CONSTRAINT FOREIGN KEY** pada semua tabel yang bere
     ADD CONSTRAINT fk_dosenwali FOREIGN KEY (kd_ds) REFERENCES dosen(kd_ds) ON UPDATE CASCADE ON DELETE RESTRICT;
     ```
 
-    **Contoh:**
+    **Contoh:**<br>
     ![img](gambar/4.png)<br>
 
 4. Lakukan perubahan data pada tabel dosen.
@@ -118,7 +118,7 @@ Implementasikan penggunaan **CONSTRAINT FOREIGN KEY** pada semua tabel yang bere
     SET kd_ds = 'DS003' WHERE nama = 'Usop';
     ```
 
-    **Contoh:**
+    **Contoh:**<br>
     ![img](gambar/5.png)<br>
 
 5. Lakukan penghapusan data pada tabel dosen (kd_ds). Ubah mode menjadi ON UPDATE CASCADE ON DELETE SET NULL.
@@ -139,7 +139,7 @@ Implementasikan penggunaan **CONSTRAINT FOREIGN KEY** pada semua tabel yang bere
     DELETE FROM dosen WHERE nim = 'DS003';
     ```
 
-    **Contoh:**
+    **Contoh:** <br>
     ![img](gambar/6.png)<br>
 
 
